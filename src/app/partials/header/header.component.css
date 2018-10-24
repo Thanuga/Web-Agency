@@ -1,0 +1,29 @@
+header{
+    padding:10px;
+    background-color:  rgb(25, 87, 180);
+}
+header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+header ul li a{
+    padding:10px;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+.logo-header img{
+height: 5%;
+width: 5%;
+border: rgb(134, 134, 134) 2px groove;
+}
+h1{
+text-align: center;
+margin-top: -45px;
+}

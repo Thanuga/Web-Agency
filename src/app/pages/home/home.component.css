@@ -1,0 +1,14 @@
+#home{
+    margin-top: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.2em;
+}
+.row {
+    margin-right: 10px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+body{
+    background-color: black;
+}
