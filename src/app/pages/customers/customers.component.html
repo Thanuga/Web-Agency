@@ -1,42 +1,44 @@
-<h1>Liste des clients</h1>
-<div class="counter" *ngIf="customers">
-  <p>{{customers.length}} clients</p>
-</div>
-<div class="mt-5 mb-5">
-  <a routerLink='/createcustomer' class="btn btn-info">Ajouter un client</a>
-</div>
-<div class="table-responsive">
-  <table class="table table-hover table-bordered table-dark">
-    <tr>
-      <td>N° de réf.</td>
-      <td>Nom de l'entreprise</td>
-      <td>Rue</td>
-      <td>Ville</td>
-      <td>Code Postal</td>
-      <td>Nom</td>
-      <td>Prénom</td>
-      <td>Téléphone</td>
-      <td>Email</td>
-      <td>Secteur d'activité</td>
-    </tr>
-    <tbody>
-      <tr *ngFor="let customer of customers">
-        <td>{{customer._id}}</td>
-        <td>{{customer.nameent}}</td>
-        <td>{{customer.address}}</td>
-        <td>{{customer.city}}</td>
-        <td>{{customer.zipcode}}</td>
-        <td>{{customer.name}}</td>
-        <td>{{customer.firstname}}</td>
-        <td>{{customer.phone}}</td>
-        <td>{{customer.email}}</td>
-        <td>{{customer.activity}}</td>
-        <td>
-          <a routerLink="/customer/{{customer._id}}" class="btn btn-primary">Voir profil </a>
-          <a routerLink="/updatecustomer/{{customer._id}}" class="btn btn-secondary">Modifier profil</a>
-          <button type="button" name="button" class="btn btn-danger" (click)="deleteCustomer(customer._id)">Supprimer</button>
-        </td>
+<div id="corps">
+  <h1>Liste des clients</h1>
+  <div class="counter" *ngIf="customers">
+    <p>{{customers.length}} clients</p>
+  </div>
+  <div class="mt-5 mb-5">
+    <a routerLink='/createcustomer' class="btn btn-info">Ajouter un client</a>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-hover table-bordered table-dark">
+      <tr>
+        <td>N° de réf.</td>
+        <td>Nom de l'entreprise</td>
+        <td>Rue</td>
+        <td>Ville</td>
+        <td>Code Postal</td>
+        <td>Nom</td>
+        <td>Prénom</td>
+        <td>Téléphone</td>
+        <td>Email</td>
+        <td>Secteur d'activité</td>
       </tr>
-    </tbody>
-  </table>
+      <tbody>
+        <tr *ngFor="let customer of customers">
+          <td>{{customer._id}}</td>
+          <td>{{customer.nameent}}</td>
+          <td>{{customer.address}}</td>
+          <td>{{customer.city}}</td>
+          <td>{{customer.zipcode}}</td>
+          <td>{{customer.name}}</td>
+          <td>{{customer.firstname}}</td>
+          <td>{{customer.phone}}</td>
+          <td>{{customer.email}}</td>
+          <td>{{customer.activity}}</td>
+          <td>
+            <a routerLink="/customer/{{customer._id}}" class="btn btn-primary">Voir profil </a>
+            <a routerLink="/updatecustomer/{{customer._id}}" class="btn btn-secondary">Modifier profil</a>
+            <button type="button" name="button" class="btn btn-danger" (click)="deleteCustomer(customer._id)">Supprimer</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

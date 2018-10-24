@@ -1,0 +1,27 @@
+form {
+  margin-top: 5%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.863);
+  text-align: center;
+  color: aliceblue;
+  padding: 5%;
+}
+
+.row {
+  margin: auto;
+}
+
+.btn-info {
+  margin: auto;
+  text-align: center;
+  margin: 0 0 0 0;
+  float: right;
+}
+
+#corps {
+  padding: 5%;
+  background-color: rgb(209, 209, 209);
+  margin-top: 2%;
+}

@@ -5,10 +5,13 @@
     font-size: 1.2em;
 }
 .row {
-    margin-right: 10px;
-    margin-left: 100px;
-    margin-top: 50px;
-}
+    margin: auto;
+    padding: 5%;
+  }
+.col{
+    text-align: center;
+    margin: auto;
+  }
 body{
     background-color: black;
 }
