@@ -1,6 +1,6 @@
 # Web-Agency
 
-This project was created by THILIPKUMAR Thanuga B3.
+This project was created by KONESWARAN Pratheepa & THILIPKUMAR Thanuga B3.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
 
